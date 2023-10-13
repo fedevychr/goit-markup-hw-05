@@ -479,6 +479,7 @@ img {
 }
 
 .social-container {
+    margin-right: 80px;
 }
 
 .social-text {
@@ -518,6 +519,56 @@ img {
 .social-link:hover,
 .social-link:focus {
     background-color: #31d0aa;
+}
+
+.subscribe-container {}
+
+.subscribe-text {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.footer-form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-form-input {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    background-color: transparent;
+    outline: transparent;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 8px 16px;
+}
+
+.footer-form-btn {
+    display: inline-flex;
+    padding: 8px 24px;
+    gap: 16px;
+    border-radius: 4px;
+    background-color: #4D5AE5;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border: none;
+}
+
+.subscribe-icon {
+    fill: #ffffff;
 }
 
 /* Backdrop Modal */
