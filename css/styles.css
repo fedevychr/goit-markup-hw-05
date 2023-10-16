@@ -171,7 +171,9 @@ img {
     display: flex;
     align-items: center;
     background-color: #2E2F42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero-bg.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), 
+                    rgba(46, 47, 66, 0.70)), 
+                    url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -479,7 +481,7 @@ img {
 }
 
 .social-container {
-    margin-right: 80px;
+    margin-right: auto;
 }
 
 .social-text {
@@ -571,6 +573,12 @@ img {
     letter-spacing: 0.04em;
     border: none;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+    background-color: #404BBF;
 }
 
 .subscribe-icon {
@@ -756,15 +764,21 @@ img {
     fill: transparent;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
+    margin-right: 8px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
                 border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
                 fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-check:checked + .check-text > .check-text-box {
+.modal-check:checked+.check-text>.check-text-box {
     background-color: #404BBF;
     border: none;
     fill: #F4F4FD;
+    border-color: #4D5AE5;
+}
+
+.modal-check:focus+.check-text>.check-text-box {
+    border-color: #4D5AE5;
 }
 
 
@@ -785,6 +799,11 @@ img {
     letter-spacing: 0.04em;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+    background-color: #404BBF;
 }
 
 
